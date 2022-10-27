@@ -1,32 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link href="style.css" rel="stylesheet" type="text/css" />
+
+
 </head>
+
 <body>
+  <a href='login.html'>login</a>
+  <a href='success.html'>Success</a>
   <div class="container">
-    <div class="login-wrapper">
-      <form>
-        <div class="login-message">
-            <h1>Welcome, Sign-In</h1>
+    <div class="form-wrapper">
+      <h1 class="sign-up">Sign Up</h1>
+      <form class="form">
+        <div class="input-group">
+          <label for="FirstName">First Name:</label>
+          <input type="text" placeholder="First Name" required />
         </div>
-        <div class="input-groups">
-            <label for="email">Email:</label>
-            <input type="email" placeholder="Email" required>
+        <div class="input-group">
+          <label for="LastName">Last Name:</label>
+          <input type="text" placeholder="Last Name" required />
         </div>
-        <div class="input-groups">
-            <label for="Password">Password:</label>
-            <input type="password" placeholder="Password" required>
+        <div class="input-group">
+          <label for="Number">Phone Number:</label>
+          <input type="tel" placeholder="phone Number" required />
         </div>
-        <button class= 'login-btn'><a href = 'success.html'> Sign in</a></button>
-        <p class="signin-redir">Don't have an account? Sign up <a href="index.html">Here</a></p>
+        <div class="input-group">
+          <label for="Email">Email:</label>
+          <input type="email" placeholder="Email" required />
+        </div>
+
+        <label for='Gender' class="gender">Gender:</label>
+        <select required>
+          <option></option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+
+        <!--           <h3>Gender:</h3>
+
+          <label for="male">Male</label>
+          <input
+            type="radio"
+            name="gender"
+            value="male"
+            class="input-radio"
+            required
+          />
+          <label for="female">Female</label>
+          <input
+            type="radio"
+            name="gender"
+            value="female"
+            class="input-radio"
+            required
+          /> -->
+        <div class="input-group">
+          <label for="date">Date Of Birth:</label>
+          <input type="date" placeholder="dd-mm-yy" required />
+        </div>
+        <div class="input-group">
+          <label for="color">Favourite-Color:</label>
+          <input type="color" required />
+        </div>
+        <div class="input-group">
+          <label for="Create-password">Password:</label>
+          <input type="password" placeholder="Create Password" required />
+        </div>
+        <div class="input-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" placeholder="Confirm-Password" required />
+        </div>
+        <button class='signUp-btn'><a href='login.html'>Sign up</a></button>
+        <p class="login-dir">
+          Have an account already? click <a href="login.html">Here</a>
+        </p>
+      </form>
     </div>
-    </form>
-      </div>
-    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
 </body>
+
 </html>
